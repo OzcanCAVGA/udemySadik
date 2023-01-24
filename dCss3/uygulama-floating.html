@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header, footer {
+            background-color: rgb(169, 85, 248);
+            /* line-height: 120px;
+            height kadar */
+            padding: 15px;
+        }
+
+        .font__header {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            color: rgb(255, 191, 71);
+        }
+
+        .font__footer {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            color: rgb(255, 191, 71);
+        }
+
+        .content {
+            width: 60%;
+
+            padding-left: 15px;
+        }
+
+        .col {
+            float: left;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .menu {
+            width: 33%;
+        }
+
+        .menu-bar {
+            height: 45px;
+            width: auto;
+            line-height: 45px;
+
+            margin-top: 16px;
+            margin-bottom: 8px;
+
+            padding-left: 10px;
+
+            background-color: rgb(53, 11, 93);
+            color: aliceblue;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+
+        .menu-bar:hover {
+            background-color: rgb(127, 76, 175)
+        }
+
+
+        .content h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header font__header">
+        <h1>Header</h1>
+    </header>
+    <section class="clearfix">
+        <div class="menu col">
+            <div class="menu-bar">Html</div>
+            <div class="menu-bar">Css</div>
+            <div class="menu-bar">JavaScript</div>
+        </div>
+        <div class="content col">
+            <h1>Komple Web Gelistirme Kursu</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et perspiciatis, expedita voluptatum eaque,
+                sunt doloribus totam temporibus dolor maxime similique unde vel aspernatur! Repudiandae tempore nam
+                animi adipisci sunt aperiam iure eius quae? Commodi consectetur unde maxime corrupti dolores accusamus
+                sapiente nemo, quod totam odio in nulla eum nobis cupiditate asperiores, repudiandae ullam fugiat
+                voluptate deleniti doloribus cum? Quae enim odit debitis perferendis. Ipsa error consectetur praesentium
+                sapiente sequi iusto repellendus ullam nihil neque quis.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae praesentium id saepe dolore corrupti.
+                Neque magnam libero mollitia, consequatur perspiciatis facere quas fuga earum esse voluptates odit
+                beatae deserunt placeat.</p>
+        </div>
+
+    </section>
+    <footer class="footer font__footer">
+        <h1>Footer</h1>
+    </footer>
+</body>
+
+</html>

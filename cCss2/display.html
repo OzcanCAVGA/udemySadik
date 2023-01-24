@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            * Display => bir ogenin nasil goruntulenecegini belirtir.
+
+            * [display:none]            => bir oge tum icerigi ile gizlenecek ve yok sayilacak.
+            * [display:inline]          => kodda width ve heigth varsa bile yok sayilacak. Genisligi ve uzunlugu icerigin sekli kadar yer alir. padding deger saglar ama.
+                                        ayni leveldaki ogeler yan yana siralanacak.
+            * [display:block]           => satiri oldugu gibi kapla demek. Yani containerin siniri kadar ilerle.
+            * [display:inline-block]    => icerikler inline gibi yan yana siralanacak ama width-heigth ozellikleri yer alabilir.
+
+        
+        */
+        .box {
+            height: 60px;
+            width: 60px;
+            display: inline;
+            /*INLINE ozelligi sadece icerik kadar yer kapla dedik, height-width ozellikleri patladi */
+
+            display: inline-block;
+            /* display: inline-block; 
+                der isek, height ve width ozelliklerini verebilir hale gelecegiz. Ayni zamanda inline elemanlar gibi yan yana gelecek kutular. */
+            /* inline-block ile width ve heigth ozelliklerini alabildigini soyledik ama eger tanimlanmazsa width veya heihth, icerik kadar genisleme olur.  */
+
+        }
+
+
+        a {
+            width: 100px;
+            height: auto;
+            background-color: aquamarine;
+
+            /* normalde linklerin icerigi kadar genislik ve yukseklik olur, biz tanimlasak bile o degerleri almaz. Ve ustelik yan yanadir.
+            Biz hem width ve heigth aldiralim hem de alt alta siralayalim istiyoruz. Bunun icinde display:block yaparsak bunu hallederiz.
+            */
+
+            display: block;
+        }
+
+        #first {
+            background-color: red;
+        }
+
+        #second {
+            background-color: green;
+        }
+
+        #third {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- display : none | inline | inline-block | block -->
+    <!-- display: block ==> block element demek bulundugu satiri oldugu gibi kapliyor olmasi demek
+                            display:block, containerin genisligi kadar kapla demek. -->
+
+
+    <div id="container">
+        <div class="box" id="first"> first</div>
+        <div class="box" id="second">second</div>
+        <div class="box" id="third">third</div>
+    </div>
+
+    <div>
+        <a href="#">Home</a>
+        <!-- bunlar inline elemanlar, her bir elemanin genisligi-yuksekligi auto olarak tanimlanir. Inline elemanlara width ve heigth tanimlanamaz. -->
+        <a href="#">Movies</a> <!-- Padding tanimlandiginda ise sagdan soldan etki eder, asagi ve yukari etki etmez. -->
+        <a href="#">Contact</a>
+    </div>
+
+</body>
+
+</html>

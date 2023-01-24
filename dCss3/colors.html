@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+        height: 150px;
+        border: 2px solid gray;
+        margin-bottom:10px ;
+    
+    }
+    #box1{
+    background: rgb(255,0,0);
+    opacity: .5; /* saydamlik olarak gecer, 1 en dusuk seviye, 0 maks deger. 1de renk tam olarak gozukur. */
+    transition: opacity .5s;
+        
+}
+    #box1:hover{
+        background: rgb(255,0,0);
+        opacity: .8;
+
+    }
+    #box2{
+    background-color: green;
+    opacity: .0;
+    }
+    #box3{
+    background-color: rgba(0, 0, 255, 0.7); /* rgba -->  rgb nin sonuna a ekleyince, opacity kismini koyabiliyoruz. */
+   
+    }
+
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+</body>
+</html>

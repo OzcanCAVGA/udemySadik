@@ -1,0 +1,51 @@
+<!--
+    1- Sayfa basligini ortalayip font buyuklugunu 16px yapiniz.
+    2- Tum liste elemanlarinin ustunu cizin ve zemin rengini "#EBE645" yapin. (internal-external css)
+    3- Sadece ilk 3 elemanin ustunu cizin ve zemin rengini "#344CB7" yapiniz.(inline css)
+    4- Tum liste elemanlarinin liste isaretini kaldiriniz (list-style-type)
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Gelistirme Yol Haritasi</title>
+    <style>
+        h1 {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        li {
+            list-style-type: none;
+            background-color: #EBE645;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 >Web Gelistirme Yol Haritasi</h1>
+    </header>
+
+    <section>
+        <ul>
+            <li style="background-color: #344CB7;"><input type="checkbox" checked>Html Ogren </li>
+            <li style="background-color: #344CB7;"><input type="checkbox" checked>Css Ogren</li>
+            <li style="background-color: #344CB7;"><input type="checkbox" checked>JavaScript Ogren</li>
+            <li style="text-decoration: none;"><input type="checkbox">Backend Dili Ogren</li>
+            <li style="text-decoration: none;"><input type="checkbox">Angular/React Ogren</li>
+        </ul>
+    </section>
+
+
+</body>
+
+</html>

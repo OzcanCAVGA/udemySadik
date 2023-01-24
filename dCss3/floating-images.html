@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img { /* eklenen foto icin ayar yapiyoruz. */
+            width: 300px;
+            float: left;
+            margin-right: 15px;
+
+        }
+
+        p {
+            border: 2px solid red;
+            padding: 5px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolore sed saepe, suscipit placeat, alias
+        voluptatibus assumenda quisquam consequuntur molestias consequatur cumque molestiae officia nam, unde
+        praesentium animi. Aperiam eos possimus temporibus? Fugiat, optio distinctio beatae et ex ad in itaque
+        aspernatur consectetur nesciunt modi rerum officia numquam ullam repellat!
+    </p>
+    <p class="clearfix">
+        <img src="img/rowing.jpeg" alt="">
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ut praesentium provident vel explicabo iure
+            in
+            voluptate repudiandae, debitis aspernatur deserunt laudantium numquam iste autem architecto nemo eum
+            accusantium
+            neque!
+        </span>
+    </p>
+</body>
+
+</html>

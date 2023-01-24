@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*
+clear kullanmanin 2.yontemi ise clearfix class'idir. 
+*/        
+        
+        #container{
+        background-color: chocolate;
+
+        }
+        .box{
+ 
+            width: 150px;   
+            height: 150px;   
+            background-color: brown;
+            float: right;
+
+        }
+        
+        
+        .clearfix::after{
+        /* uyguladigim elementin hemen sonunda yeni bir element   olusturdugunu varsayip ona uyguladigimizi dusunuyoruz. */
+            content: "";
+            display: block;
+            clear: both;
+    /*
+             *once ici bos olan bir icerik ekliyorum
+             *bu elemani block element diyorum
+             *en sonunda da float ozelligi varsa siliyorum.
+    */
+    }
+    </style>
+</head>
+<body>
+    <div id="container" class="clearfix">
+        <div class="box">kutu1</div>
+        <div class="box">kutu2</div>
+        <div class="box">kutu3</div>
+        
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis expedita perferendis architecto vitae eligendi earum ea, reprehenderit corporis nisi enim doloribus mollitia pariatur praesentium alias a error, tenetur natus quod repellendus ut tempore veniam adipisci? Enim, adipisci veritatis nostrum optio dolores dolore cumque accusantium!</p>
+</body>
+</html>

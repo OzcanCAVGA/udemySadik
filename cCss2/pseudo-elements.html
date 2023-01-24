@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        p::first-letter{ /* ilk harfi */
+        font-size: 40px;
+        color: rebeccapurple;
+        }
+        p::first-line{/* ilk satiri */
+        color: brown;
+        font-weight: bold;    
+        word-spacing: 2px; /* Kelimeler arasi bosluk */
+        letter-spacing: 1px; /* Harfler arasi bosluk */
+        }
+        p.about::first-line{/* p etiketinde [about] classi secilmis ise bunu etkile */
+        color:green;
+        }
+        ::selection{ /* secilen yaziya etki eder */
+            background-color: rgba(107, 11, 83, 0.492);
+        }
+        p::after{ /* p etiketinin sonunu etkiler  [before] => basini etkiler */
+            content: '\261D';
+            font-size: 65px;
+            padding-left:5px ;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Pseudo elements -->
+    <!-- Burada herhangi elementin bir parcasina mudahale etmis oluyoruz.  -->
+    <!-- Pseudo elements icin ikiser nokta kullaniyoruz. -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iste saepe numquam optio, soluta molestiae deserunt? Distinctio illo consequatur, dolor aliquam vero tempora! Eveniet, accusantium. Dolores totam praesentium qui laboriosam.</p>
+    
+    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio obcaecati itaque modi, in dolorem eveniet delectus laudantium vero sit repellendus ratione. Eveniet ipsum molestiae voluptate neque, aperiam nostrum laboriosam libero.</p>
+
+</body>
+</html>

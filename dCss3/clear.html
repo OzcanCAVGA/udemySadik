@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/*
+float elementlerin normal akisini bozar. Bu bozulan akisi tekrar duzeltmek icin bir seyler yapmak gerekiyor.
+Mesela su an browser ayarlarindan fareyle gelince container icerisini yesile almiyor, bir kapsama sokmuyor. 
+Asagida bir paragraf ekledigimizde de asagidan baslatmak yerine kutu1'in sag tarafindan baslatiyor. 
+*/        
+        
+        #container{
+        background-color: chocolate;
+
+        }
+        .box{
+ 
+            width: 150px;   
+            height: 150px;   
+            background-color: brown;
+            float: right;
+
+        }
+        #box1{
+        float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="box1">kutu1</div>
+        <div class="box">kutu2</div>
+        <div class="box">kutu3</div>
+        
+        <div style="clear: both;"></div>
+        <!--
+        float'i temizlemek icin ise yukaridaki komutu yazmaliyiz. 
+        -->
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta facilis expedita perferendis architecto vitae eligendi earum ea, reprehenderit corporis nisi enim doloribus mollitia pariatur praesentium alias a error, tenetur natus quod repellendus ut tempore veniam adipisci? Enim, adipisci veritatis nostrum optio dolores dolore cumque accusantium!</p>
+</body>
+</html>

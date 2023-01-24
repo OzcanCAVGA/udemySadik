@@ -1,0 +1,73 @@
+.btn {
+    /* genel buton ozellikleri */
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 15px;
+    /* inline-block verdigimiz icin padding koymamiz lazim. */
+    font-size: 16px;
+    cursor: pointer;
+    /* buton uzerine gelince el isareti cikmasini istiyorsak */
+    border: none;
+    border-radius: 5px ;
+    transition-duration: .6s; /* butun ozelliklerin gecisini yapariz. */
+                            /* eger bir ozellikten baska bir ozellige gecis varsa bunu kullaniriz. Yani :hover varsa burada etki eder. */
+
+
+}
+
+.btn-primary {
+    /* 1.renkli buton */
+    background-color: #fc997c;
+    color: white;
+    border: 2px solid #fc997c
+}
+
+.btn-primary:hover {
+    /* 1.renkli buton */
+    background-color: white;
+    color: #fc997c;
+    border: 2px solid #fc997c
+}
+
+.btn-outline-primary {
+    /* 3.renkli buton */
+    background-color: white;
+    color: #fc997c;
+    border: 2px solid #fc997c
+}
+
+.btn-outline-primary:hover {
+    /* 3.renkli buton */
+    background-color: #fc997c;
+    color: white;
+    border: 2px solid #fc997c
+}
+
+.btn-secondary {
+    /* 2.renkli buton */
+    background-color: #2e4c6d;
+    color: white;
+    border: 2px solid #2e4c6d
+}
+
+.btn-secondary:hover {
+    /* 2.renkli buton */
+    background-color: white;
+    color: #2e4c6d;
+    border: 2px solid #2e4c6d
+}
+.btn-outline-secondary {
+    /* 4.renkli buton */
+    background-color: white;
+    color: #2e4c6d;
+    border: 2px solid #2e4c6d
+}
+
+.btn-outline-secondary:hover {
+    /* 4.renkli buton */
+    background-color: #2e4c6d;
+    color: white;
+    border: 2px solid #2e4c6d
+}

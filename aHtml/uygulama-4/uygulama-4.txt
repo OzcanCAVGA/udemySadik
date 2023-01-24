@@ -1,0 +1,15 @@
+Uygulama 4
+
+* "en-iyi-film.html" sayfasini asagidaki semantic etiketlerle duzenle
+    - <header>
+    - <nav>
+    - <section>
+    - <main>
+    - <aside>
+    - <article>
+
+* "en-iyi-film.html" sayfasinin header kismina yan yana linkler ekleyiniz.
+* "en-iyi-film.html" sayfasina kategori linkini liste olarak ekleyiniz.
+    => Tum Kategoriler, Macera, Dram, Komedi...
+
+* liste isaretini siliniz.

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        div > p  { /* div'in hemen altindaki p etiketi.
+                      4.paragraf etkilenmez.
+                      
+                      4.paragrafi etkileyen p etiketi bizim icin cocuk degil, torundur.*/ 
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Combinators -->
+
+    <!-- 2- Child Selector ( > ) -->
+    <p>1. paragraf</p>
+    <div>
+        <p>2. paragraf</p>
+        <p>3. paragraf</p>
+        <section>
+            <p>4. paragraf</p>
+        </section>
+    </div>
+    <p>5. paragraf</p>
+</body>
+
+</html>

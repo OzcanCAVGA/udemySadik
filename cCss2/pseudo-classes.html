@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            border: 1px solid gray;
+            padding: 5px 8px;
+            text-decoration: none;
+            display: inline-block;
+            width: 60px;
+            text-align: center;
+            border-radius: 5px;
+
+        }
+
+        a:link {
+            /* Daha once tiklanmayan link */
+            color: aquamarine;
+
+        }
+
+        a:visited {
+            /* Tiklanan link */
+            color: blueviolet;
+        }
+
+        a:hover {
+            /* Uzerine gelince ne olacagi belirtiliyor  */
+            color: yellowgreen;
+            background-color: blueviolet;
+        }
+
+        a:active {
+            /* a uzeirne tiklama aninda ne olunacagi */
+            color: brown;
+            background-color: rgb(103, 30, 171);
+
+        }
+
+        p {
+            display: none;
+
+        }
+
+        div:hover p{ /* div uzerine gelindiginde tum child p'leri etkile. */
+            background-color: royalblue;
+            display: block;
+        }
+
+        div:visited {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Pseudo classes -->
+    <a href="borders.html">Home</a>
+    <a href="box-model.html">Products</a>
+    <a href="combinators1.html">About</a>
+
+    <div>
+        Click here!
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus totam quasi delectus necessitatibus eaque?
+            Pariatur fugit, officia labore magnam, recusandae dolore, repellendus atque quidem quibusdam porro rerum
+            tenetur. Praesentium, autem?</p>
+    </div>
+</body>
+<!-- [Mozilla develeoperdaki tum psudo classes incele!!!] -->
+</html>

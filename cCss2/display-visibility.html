@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        
+        * [display:none]      => nesneyi ortadan kaybedebilmemizi saglar. 
+                            Tamamen ortadan kaybolur, yok ederiz.
+        * [visibility:hidden] => nesneyi ortadan kaldirmamizi saglar ama isgal ettigi heigth ve width ozelliklerini korur, gittigi yerde bosluk olusur.
+        */
+        
+        .box {
+            height: 60px;
+            width: 60px;
+            display: inline;
+
+            display: inline-block;
+        }
+
+        #first {
+            background-color: red;
+            visibility: hidden;
+        }
+
+        #second {
+            background-color: green;
+            display: none;
+        }
+
+        #third {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- display : none | inline | inline-block | block -->
+   
+    <div id="container">
+        <div class="box" id="first"> first</div>
+        <div class="box" id="second">second</div>
+        <div class="box" id="third">third</div>
+    </div>
+
+
+
+</body>
+
+</html>
